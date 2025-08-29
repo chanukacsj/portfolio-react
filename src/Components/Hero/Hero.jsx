@@ -4,7 +4,7 @@ import profile_img from '../../assets/profile_img.jpeg'
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <img src={profile_img} alt="" />
       <h1><span>I'm Chanuka Sri Jeewantha ,</span>full stack developer</h1>
       <p>I'm a full stack developer with a passion for creating innovative and user-friendly web applications.</p>
