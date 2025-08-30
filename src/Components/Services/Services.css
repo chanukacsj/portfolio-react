@@ -38,6 +38,17 @@
     transition: 0.4s;
     cursor: pointer;
 }
+.collapsed {
+  max-height: 43px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.expanded {
+  max-height: 500px;
+  transition: max-height 0.5s ease;
+}
+
 .services-format h3{
     font-size: 28px;
     font-weight: 600;
@@ -68,6 +79,14 @@
     transform: scale(1.05);
     transition: 0.4s;
 }
+.services-readmore img {
+  transition: transform 0.3s;
+}
+
+.services-format .expanded + .services-readmore img {
+  transform: rotate(180deg);
+}
+
 @media(max-width: 768px){
     .services{
         margin: 20px 70px;

@@ -88,9 +88,6 @@
     }
 }
 
-
-/* \\========================================================================== */
-
 @media (max-width: 576px) {
     .nav-menu {
         width: 280px;
@@ -104,8 +101,6 @@
         left: 230px;
     }
 }
-
-/* Extra small phones */
 @media (max-width: 400px) {
     .nav-menu {
         width: 240px;

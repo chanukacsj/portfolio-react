@@ -51,6 +51,10 @@
     border-radius: 50px;
     cursor: pointer;
 }
+.hero-resume a{
+    text-decoration: none;
+    color: white;
+}
 .hero-connect:hover{
     border: 2px solid white;
 }

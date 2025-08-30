@@ -10,6 +10,7 @@
     position: relative;
 
 }
+
 .about-title h1{
     font-size: 80px;
     font-weight: 600;
@@ -47,7 +48,7 @@
     font-size: 24px;
     line-height: 40px;
 } */
-.about-skill{
+/* .about-skill{
     display: flex;
     gap: 50px;
     align-items: center;
@@ -65,7 +66,49 @@
     height: 8px;
     border-radius: 50px;
     background: linear-gradient(267deg,#DF8908 5.09%,#B923E1 106.28%);
+} */
+
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; /* center icons */
 }
+
+.about-skill {
+  font-size: 30px; /* icon size */
+  color: #fff; /* icon color */
+  background: #333; /* dark background */
+  width: 50px; /* icon container size */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.about-skill:hover {
+  transform: scale(1.2);
+  background: #007bff; /* hover background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* stronger shadow */
+  color: #fff; /* icon color stays white */
+}
+
+/* Optional: different brand colors on hover */
+.about-skill:nth-child(1):hover { background: #6DB33F; } /* Spring Boot green */
+.about-skill:nth-child(2):hover { background: #563d7c; } /* Bootstrap purple */
+.about-skill:nth-child(3):hover { background: #38B2AC; } /* Tailwind cyan */
+.about-skill:nth-child(4):hover { background: #61DAFB; color: #000; } /* React blue */
+.about-skill:nth-child(5):hover { background: #59666C; } /* Hibernate gray */
+.about-skill:nth-child(6):hover { background: #00758F; } /* MySQL blue */
+.about-skill:nth-child(7):hover { background: #5382A1; } /* Java blue */
+.about-skill:nth-child(8):hover { background: #F0DB4F; color: #000; } /* JavaScript yellow */
+
 .about-achievments{
     display: flex;
     width: 100%;

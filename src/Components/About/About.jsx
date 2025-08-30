@@ -2,7 +2,29 @@ import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
 import profile_img from "../../assets/about_profile.jpeg";
+import {
+  SiSpringboot,
+  SiBootstrap,
+  SiTailwindcss,
+  SiReact,
+  SiHibernate,
+  SiMysql,
+  SiHtml5
+} from "react-icons/si";
+import { DiHtml5, DiJava, DiJavascript } from "react-icons/di";
+
 const About = () => {
+  const skillIcons = [
+  <SiSpringboot key="springboot" />,
+  <SiBootstrap key="bootstrap" />,
+  <SiTailwindcss key="tailwind" />,
+    <SiHtml5 key="html" />,
+  <SiReact key="react" />,
+  <SiHibernate key="hibernate" />,
+  <SiMysql key="mysql" />,
+  <DiJava key="java" />,
+  <DiJavascript key="javascript" />,
+];
   return (
     <div className="about" id="about">
       <div className="about-title">
@@ -25,7 +47,7 @@ const About = () => {
               meet the needs of clients and users.
             </p>
           </div>
-          <div className="about-skills">
+          {/* <div className="about-skills">
              <div className="about-skill">
               <p>React</p>
               <hr style={{ width: "50%" }} />
@@ -42,6 +64,13 @@ const About = () => {
               <p>HTML & CSS</p>
               <hr style={{ width: "70%" }} />
             </div>
+          </div> */}
+          <div className="about-skills">
+            {skillIcons.map((icon) => (
+              <div className="about-skill" key={icon.key}>
+                {icon}
+              </div>
+            ))}
           </div>
         </div>
       </div>
