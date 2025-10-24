@@ -6,7 +6,7 @@ Personal portfolio website built using **React + Vite + Tailwind CSS**, showcasi
 
 - ⚛️ React  
 - 🎨 Tailwind CSS  
-- 📦 JavaScript (ES6+)  
+- 📦 JavaScript
 - ☁️ Netlify (for deployment)
 
 ---
